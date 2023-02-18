@@ -7,10 +7,11 @@ import Box from "../components/Box";
 import LightBulb from "../components/LightBulb";
 import OrbitControls from "../components/OrbitControls";
 import Draggable from "../components/Draggable";
+import AsciiEffect from "../components/AsciiEffect";
 import { Suspense } from "react";
 
-// TO DO (investigate):
-// https://github.com/pmndrs/drei#readme
+// Great examples:
+// https://threejs.org/examples/#webgl_lines_sphere
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         }}
       >
         <ambientLight color={"white"} intensity={0.3} />
+        <AsciiEffect />
         <LightBulb position={[0, 3, 0]} />
         <Draggable>
           <Suspense fallback={null}>
